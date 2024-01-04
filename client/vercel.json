@@ -1,0 +1,17 @@
+{
+  "installCommand": "npm install --legacy-peer-deps --force",
+  "version": 2,
+  "routes": [
+    {
+      "src": "/meals/getmeals",
+      "methods": ["GET"],
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET",
+        "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Allow-Credentials": "true"
+      },
+      "dest": "https://mealy-server.vercel.app/meals/getmeals"
+    }
+  ]
+}
